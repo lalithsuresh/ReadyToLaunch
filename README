@@ -16,6 +16,12 @@ On Ubuntu/Debian derivatives, simply copy the readytolaunch shell script
 to /etc/network/if-up.d/. Make sure the script has 755 permissions and is
 owned by user:root and group:root.
 
+Next, set the following parameters in the script as per your requirements:
+
+- ssid: the name of the network for which you need to launch said programs. (duh!)
+- username: the username to launch the programs as. (duh!)
+- programs: the programs to launch. (duh!)
+
 Feel free to add info here on how to go about this on other distros.
 
 
