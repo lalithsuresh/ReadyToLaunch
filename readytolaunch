@@ -1,0 +1,34 @@
+#!/bin/bash
+
+# July 26, 2011
+# Author - Lalith Suresh <suresh.lalith@gmail.com>
+
+
+# SSID that we consider Home
+ssid=HomeSsid
+
+# User to run the programs as
+username=UserWhoRules
+
+# List programs to launch here
+programs="program1
+program2
+program3
+"
+
+
+if [  "`iwgetid --raw`" = "$ssid" ]
+then
+
+  for program in $programs
+  do
+
+    if [ -z "$(pgrep $program)" ]
+    then
+
+      sudo -u $username $program &
+
+    fi
+
+  done
+fi

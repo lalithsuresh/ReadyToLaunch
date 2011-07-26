@@ -1,0 +1,27 @@
+Ready-To-Launch-0.1
+---------------
+
+What?
+-----
+
+Ready-To-Launch is a really stupid shell script that launches
+all your favourite programs when you associate with a particular network.
+An example profile would be one that launches your instant messaging
+clients and favourite music player upon connecting to your home network.
+
+How?
+----
+
+On Ubuntu/Debian derivatives, simply copy the readytolaunch shell script
+to /etc/network/if-up.d/. Make sure the script has 755 permissions and is
+owned by user:root and group:root.
+
+Feel free to add info here on how to go about this on other distros.
+
+
+Blame List
+----------
+
+Lalith Suresh <suresh.lalith@gmail.com>
+
+
